@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://ariacostcs.gainsightcloud.com/v1/sites/onboardingchecklist -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>OnboardingChecklist</title>
+      <link rel="shortcut icon" type="image/x-icon" href="https://ariacostcs.gainsightcloud.com/v1/ui/assets/images/core/gainsight-favicon.ico">
+      
+      <style>
+          * {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box
+          }
+
+          *:before, *:after {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box
+          }
+
+          html {
+              -ms-text-size-adjust: 100%;
+              -webkit-text-size-adjust: 100%;
+              height: 100%;
+              font-size: 10px
+          }
+
+          body {
+              margin: 0;
+              padding: 0;
+              font-size: 1.4rem;
+              font-family: Arial, Helvetica, sans-serif;
+              /*color: #374353*/
+              overflow: hidden;
+          }
+
+          .text-center {
+              text-align: center
+          }
+
+          .left {
+              float: left !important
+          }
+
+          .right {
+              float: right !important
+          }
+          a{ color: #00b4e5; text-decoration: none;}
+          h1, .h1 {
+              font-size: 1.8rem;
+              line-height: 110%;
+              margin: 2.1rem 0 1.68rem 0
+          }
+
+          h2, .h2 {
+              font-size: 1.6rem;
+              line-height: 110%;
+              margin: 1.78rem 0 1.424rem 0
+          }
+
+          h3, .h3 {
+              font-size: 1.5rem;
+              line-height: 110%;
+              margin: 1.46rem 0 1.168rem 0
+          }
+
+          h4, .h4 {
+              font-size: 1.4rem;
+              line-height: 110%;
+              margin: 1.14rem 0 0.912rem 0
+          }
+
+          h5, .h5 {
+              font-size: 1.3rem;
+              line-height: 110%;
+              margin: 0.82rem 0 0.656rem 0
+          }
+
+          h6, .h6 {
+              font-size: 1.2rem;
+              line-height: 110%;
+              margin: 0.5rem 0 0.4rem 0
+          }
+
+          .gsWrapper {
+              display: flex;
+              flex-direction: column;
+              height: 100vh;
+
+          }
+
+          .gs-header {
+              flex-shrink:0;
+              height: 5.1rem;
+              background-color:#00b4e5;
+              width: 100%;
+              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.16), 0 1px 3px 0 rgba(0,0,0,0.26);
+
+          }
+
+          .gs-header__logo {
+              width: 18.1rem;
+              height: 4.9rem;
+              margin-top: .1rem;
+              border-style: solid;
+              border-top-color: #ccf0fa;
+              border-right-color: transparent;
+              position: relative;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              border-width: 4.9rem 3.1rem 0 0
+          }
+
+          .gs-header__logo img {
+              position: absolute;
+              left: 1rem;
+              top: -3.8rem
+          }
+
+          .gs-header__right {
+              padding: .5rem 2rem 0 0;
+              line-height: 3.6rem;
+              color: #fff;
+          }
+
+          .gs-container {
+              overflow: auto;
+              flex:1;
+
+          }
+          /*.noHeader{
+              top:0px !important;
+          }
+          .noFooter{
+              bottom:0px !important;
+              height: 100vh !important;
+          }*/
+
+          .gs-container .items {
+              display: block;
+              background: #f0f3f6;
+
+              border-radius: 3px;
+              margin: 1rem
+          }
+
+          .gs-container .leftPanel {
+              min-width: 300px
+          }
+
+          .gs-footer {
+              flex-shrink:0;
+              text-align: center;
+              padding: 1rem;
+              background: #f0f3f6;
+              box-shadow: 0 1px 3px 0 rgba(0,0,0,0.16), 0 1px 3px 0 rgba(0,0,0,0.26);
+              height: 50px;
+          }
+          .browser-unsupported {
+              background: rgb(255, 201, 31);
+              z-index: 2;
+              width: 100%;
+              text-align: center;
+              color: black;
+              padding: 1rem;
+              height: 35px;
+              margin: 0.2em;
+              font-size: 14px;
+              border: black 1px solid;
+          }
+          .ie-banner {
+              display: none !important;
+          }
+      </style>
+      <script>
+        var GS = {
+            cdnVersion: "40.0.4.004",
+            cdnDomain: "https://staticjs.gainsightapp.net",
+            query: {}
+        }
+        var authToken = "eyJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiZGlyIn0..g5XfHr0gDTaTBqTe.i-qomUvpYgju3X_WiKHLWjSgdTTLGXhTy6YOuyQuWqsYaIaBp9UxWgIVYVmen1vPf9MLsA99JvuzPlPtFrevrxA9npzXKqbTyKhC7EDHWV-A-kiHwMHVhcy7CkyeRdF4QRJoiMLH1u5zpy21827lKqtjlSas6iz4hCjZugsMK40DXU6-7zyZPIatSHCK7Rd5UT6a-rkEWHbT__XK-QaPONodOzezcElayVD1KMgCieKchseY8zUTsGV_uuZOAjfbWYtzbten2C7SLMPSjwL3QkZH1ZKnNgOqEoITIyF9E4kdOJfV8qNqez5bJQcXe8w6MjDqOV1U_2MqAOZ_OB8wblxvc423cZF8ovsmefTO4srsmBGra8bE9K4Z7JxfqIBgaeDOCvhxY3lszmV_PeH-sSqgdPPjI6U1saXy4Asalw754C-qk5qFOjkEgwqGzV4LWOMQ6i7n_B7SzOXnqHtE4n7m5EuWsmcZq42BDHGFyopWsQymh2fKU68Mho6qPNzeBQqrrGrts-dG2vy9o3UjeDd6IBsbnI4b1g5Zm3bJMBAqMNLdlm3aeZg1rNddk07ym9KNQX3f8CRD86QLyFM2vIA5_WvD0k7tAjTdPjBFEZ4IkFY9aPfT-_So6tB9xMSov07Z9mBQR0-JwUEXN7OxHScqx8zvPVT4RnJGquPjQzR5-9B6NawIgylXJQfOhb5uj_PZ_sAV7BZxXvydMVOlJ8jxOErNjPTedIzKhQUMURcR6oB-a7rIS1sE6goVW5308ITlTIfKdwgQ_HXB19k099SN07xJDneq84iC3H-IaSA2sDiIHWgrGhkKf88VBc5QZeGUd4-7W5-PIR37YF3QI1xqD7j7zGiQTsZXG5TwCutc24h5L3XbIjsY6k17C3FqlirhhWjyNmkV9aN8lCKFwqCrCwY5vK6BJR1XP6H089T7hASj_AbNTW4Obzpv3KTpU-tdCwMBB_dvgXWjZI9c1FBCXsYGTwOLP0Cba_RAPOsrCko7B-9WpGUKjeyn_yq5wy5MHis_RJuDMNauA_ARUUdUbU65Sz0cd8Thm-v1Zz9fYmOuHlViVOHc5HZ2Hz7dytb5JPJYTpSx2Q6k2jenkpuj2bZr7ltsZ_Gl8Djg1KFeKOIcJeXt3p8FG0FNZ_cTT7mg9CehuAgyoLKeT_qQQ-Rb_Fd9DXyOtZmWhBVI7A6zXUmhuu-CYxNAYQuC6P3C6qnkmljqs-LKIRlNBpzDUeMci1xFYRyDNh4qSpB7WOJefRbvU-GHGpYDuq3XsjV1tlb1pAcejRa_AtgWvYZFiL41IVJV-PLBO_a6vQGyxc5muXg_PsmP_XBK9vRHAXlpXJJ2gmXsE0_HKFpCkQ5YPPehWyU03H1vW6YB645a6TGkqLzAbGHIyHuKMSUMzSiaQTQoLJtVYxW31Vq7qiPbt3YW13ChXDp9zOlDMOhFrsu1xf-pWOwjtHKNXwr6p6CdL-RHbOV_1TEwULwcM_zzTbzqSdDQb5th02BfbV9Ez-g321Q4MoVPfAGcH42Tp3qeJdg9iAXrdlam32JW2fIw61vzhUOpr1IUY75Un6n5J7xmM3IzHgqVYXbjV-7PaeMAg4tI6eIyXcLp_SBgqfVNZCEti3XJSJXhspBthzlPbSekpvjdcyeKIzQE07ZFH_Yl1Gp2flptmgQA84CAmmRbVIPNdcg45v-J2EYHf9Fj_Fg8g9eQcC5WuWytd8ujO4teWFzWz7bq0GrfWQc0uky5YkTVAdI5d9aZNZxGXRXtiEj2w8GsMlD4ACCVeLSLAFtk1WSpjHQ0CWeZrTrT940elT12f0TihRWtkVBt-TNwDFZculw6RPLKUlsv7R8pGDN3yVvJLsl7kjlEunUDdu7egYKA26hYaf9Xmh9y3GrAr4m30G4Obx3gedoJ4Gc6JemdPWUcn1267FIZOF4jw7mI8K6QGslwBIo33FG1v91S3MTpsxs4nzrhLGYkEX5wTtsa_1e-SojXq7qNLeATaZQkOfss2zV6bmjssi5Cyvcn0P3QifRdQXC-wolsaqmT4e8FeZ01tmMmKGy0AO8JjDapaemDAhr2ZYlDVC_HW1FS60UaqMqGlPSMYiDPwKPD8l7fSk4EPiYypnxOMf0gW-rG3cerFyMvkiv5UYUEcrer0j0R8D-ZnvePocwEc-QZ8hzFm8j_uoV7jbpG2Hl86yWl4ItmUCqb4T1gFFdWXs_rArys5Q8_MZNywV6PPraG5gV19qevFjz2GQzfPbhBvMM7QUjeIPUzU1wgVCYiv6CxeZc2ie-pUoqFMmr0gM6EECcB24C_byhD-cI5adx_EVg_eXNGz5gRO9IBRph7k4HOJBVbTBaUR9bnX5lLPYHaGhoF5oUKuyOGteHjIIgxafLvCo6HjfPVRXtMV0f4VXDqB17EqvAtvUt9nf2tzAsgDQhNyO5JNPyXBPkXmVGMpKHZWklCNrhcuqga4WAw7CVJEf8tdmIaPp97oKv1AmtUF8_2elYHp9efkb4sWF2q04-avrPnOhZf1nb8bWKmr6OlcmXYB9BzTAeiWDZqPMcSoDRFrg2xBIE_7C6oMwNPm5jSEB3LFbuzJySU6LAJn30SflZllj-9ydWuIcS1ZD-ql4hUpbFWGgkXJ_dCZ7FVAzFpa6lCCtqg9KqvOD1exGhlHZ4tP258-0xwQg.4Td3_f7sT5XEEnjtARu6Zg";
+      </script>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1112.0" data-gr-ext-installed="">
+    <div class="gsWrapper">
+        
+        <div class="gs-container  ">
+            
+            
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            	<title>My Website</title>
+            <style>
+              .announcement-announcement {
+                gap: var(--dl-space-space-halfunit);
+                flex: 1;
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                transition: 0.3s;
+                align-items: flex-start;
+                padding-top: 16px;
+                padding-left: var(--dl-space-space-oneandhalfunits);
+                padding-right: var(--dl-space-space-oneandhalfunits);
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 12px;
+                background-color: #1c428a;
+                width: 100%;
+              }
+              .announcement-announcement:hover {
+                box-shadow: 10px 10px 15px 0px #d4d4d4;
+              }
+              .announcement-title {
+                color: #8AEDE8;
+                font-size: 14px;
+                font-family: Metropolis, sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 21px;
+              }
+              .announcement-root-class-name {
+                flex: 0 0 auto;
+                width: 100%;
+              }
+              .announcement-root-class-name1 {
+                flex: 0 0 auto;
+                width: 100%;
+              }
+              .announcement-announcement {
+                align-items: center;
+                flex-direction: column;
+              }
+            </style>
+            
+            
+            <link rel="stylesheet" href="./OnboardingChecklist_files/css">
+            
+              <div>
+                <a href="https://ariacostcs.gainsightcloud.com/v1/sites/onboardinghelpform" target="_blank">
+                  <div class="announcement-announcement">
+                    <span class="announcement-title">Need Help From Your TAM? Click Here</span>
+                    <div class="announcement-button"></div>
+                  </div>
+                </a>
+              </div>
+            
+            
+            
+            
+            	
+            	<title>Navbar Example</title>
+            	<style>
+            		body {
+            			background-color: #FFFFFF;
+            			margin: 0;
+            			padding: 0;
+            			font-family: 'Metropolis', sans-serif;
+            			width: 100vw;
+            		}
+            		
+            		.navbar {
+            			background-color: #FFFFFF;
+            			height: 80px;
+            			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            			display: flex;
+            			align-items: center;
+            			justify-content: space-between;
+            			padding: 0 30px;
+            		}
+                    @media (max-width: 600px) {
+                      .navbar {
+                        padding: 0 10px;
+                      }
+                    }
+            		.navbar img {
+            			height: 50px;
+            		}
+            		
+                    @media (max-width: 1000px) {
+                      .navbar img {
+                        height: 40px;
+                      }
+                     }
+                    @media (max-width: 800px) {
+                      .navbar img {
+                        height: 30px;
+                        
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .navbar img {
+                        height: 25px;
+                      }
+                    }	
+            		.navbar a {
+            			color: #000000;
+            			text-decoration: none;
+            			margin: 0 10px;
+            			padding: 10px 0;
+            			border-bottom: 2px solid transparent;
+            			transition: border-bottom-color 0.3s ease-in-out;
+            			display: flex;
+            		}
+            		@media (max-width: 1000px) {
+                      .navbar a {
+                        font-size: 12px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .navbar a {
+                        font-size: 10px;
+                      }
+                    }
+                    
+                    /* When viewport is smaller than 600px wide */
+                    @media (max-width: 600px) {
+                      .navbar a {
+                        font-size: 7px;
+                      }
+                    }	
+            		
+            		.navbar a:hover {
+            			border-bottom-color: #000000;
+            		}
+            		
+            		.navbar .active {
+            			border-bottom-color: #000000;
+            		}
+            		
+            		.navbar .center {
+            			flex: 1;
+            			display: flex;
+            			align-items: center;
+            			justify-content: center;
+            		}
+            		
+            		.navbar .tabs {
+            			display: flex;
+            			align-items: center;
+            			justify-content: center;
+            			flex-grow: 1;
+            		}
+            		
+            	</style>
+            
+            
+            	<nav class="navbar">
+            		<div class="left">
+            			<img src="./OnboardingChecklist_files/vmware-prod-icon-aria-cost-rgb-horiz.svg" alt="Your Image">
+            		</div>
+            		<div class="tabs">
+            			<a href="https://ariacostcs.gainsightcloud.com/v1/sites/onboardingchecklist" target="_blank">Onboarding Checklist</a>
+            			<a href="https://apps.cloudhealthtech.com/docebo/sso_login" target="_blank">Training Academy</a>
+            			<a href="https://docs.vmware.com/en/VMware-Aria-Cost-powered-by-CloudHealth/index.html" target="_blank">Help Center</a>
+            			<a href="https://support.cloudhealthtech.com/hc/en-us" target="_blank">Knowledge Base</a>
+            		</div>
+            	</nav>
+            
+            
+             
+            
+            <div class="section-container-a">
+              <section class="section-a">
+                <h2>Welcome to the Onboarding Checklist</h2>
+                <p>Each Training is Recommended in Order to Take Full Advantage of the VMware Aria Cost Platform</p>
+                <br><br>
+            <h4>The onboarding checklist provides step-by-step training and configuration guidance in order to help you utilize the platform to its maximum potential. Each module is designed to ensure that you are given the tools to understand the platform and configure it to your liking!</h4>
+            <br>
+            <h4><span>☞</span> Note: Every training is designed to ensure you can complete the Customer Goals listed. However, if you feel you need additional help, each goal is linked to a help article to ensure you have all the resources you need!</h4>
+              </section>
+            </div>
+            
+            <style>
+              .section-container-a {
+                max-width: 1200px;
+                margin: 2px auto;
+                padding: 0px;
+            	display: flex;
+              }
+              
+              .section-a {
+                background-color: #FFFFFF;
+                padding: 20px;
+                width: 100%;
+                align-items: center;
+                justify-content: left;
+                margin: 0px;
+                margin-top:10px;
+                border-radius: 10px;
+                text-align: left;
+              }
+              
+              .section-a h2 {
+                font-size: 36px;
+                align-items: center;
+                font-weight: bold;
+                margin-top: 5px;
+                text-align: left;
+              }
+                    @media (max-width: 1100px) {
+                      .section-a h2 {
+                        font-size: 33px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .section-a h2 {
+                        font-size: 30px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .section-a h2 {
+                        font-size: 24px;
+                      }
+                    }
+                    
+                    /* When viewport is smaller than 600px wide */
+                    @media (max-width: 600px) {
+                      .section-a h2 {
+                        font-size: 18px;
+                      }
+                    }	
+              
+              .section-a p {
+                font-size: 24px;
+                align-items: center;
+                font-weight: bold;
+                mardin-top: 8px;
+                line-height: 1.5;
+                margin: 0;
+              }
+                    @media (max-width: 1100px) {
+                      .section-a p {
+                        font-size: 22px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .section-a p {
+                        font-size: 20px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .section-a p {
+                        font-size: 16px;
+                      }
+                    }
+                    
+                    /* When viewport is smaller than 600px wide */
+                    @media (max-width: 600px) {
+                      .section-a p {
+                        font-size: 12px;
+                      }
+                    }	
+                .section-a h4 {
+                   	font-size: 16px;
+                   	font-weight: normal;
+                   	color: #717074;
+            		text-decoration: none;
+            		margin: 0 0px;
+            		padding-top:5px;
+            		padding-right:5px;
+            		display:flex;
+            		align-items:center;
+            		width: 100%;
+            		line-height: 1.25;
+            
+                  }
+                    @media (max-width: 1100px) {
+                      .section-a h4 {
+                        font-size: 14.5px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .section-a h4 {
+                        font-size: 13px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .section-a h4 {
+                        font-size: 10.5px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .section-a h4 {
+                        font-size: 8px;
+                      }
+                    }
+                .section-a h4 span {
+                  font-size: 1.8em;
+                  margin-right: 0.5em;
+                  color: #0091DA;
+                }	  
+              .section-a a {
+                color: #000000;
+                font-size: 18px; 
+                text-decoration: none;
+                margin-top: 5px;
+                align-items: center;
+                border-bottom: 2px solid transparent;
+                transition: border-bottom-color 0.3s ease-in-out;
+              }
+                    @media (max-width: 1100px) {
+                      .section-a a {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .section-a a {
+                        font-size: 15px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .section-a a {
+                        font-size: 12px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .section-a a {
+                        font-size: 9px;
+                      }
+                    }	
+              .section-a a:hover {
+                border-bottom-color: #000000;
+              }
+            </style>
+            
+                
+              <style>
+                .accordian {
+                  max-width: 1200px;
+                  margin: 2px auto;
+                  padding: 10px;
+                }
+            
+                label:hover {
+                  background-color: #f0f0f0; 
+                }
+            
+                input {
+                  display: none;
+                }
+            
+                label {
+                  font-size: 24px;
+                  font-family: Metropolis, sans-serif;
+                  background-color: white;
+                  display: block;
+                  cursor: pointer;
+                  padding: 10px 10px 5px 30px;
+                  position: relative;
+                  justify-content: center;
+                  user-select: none;
+                }
+                    @media (max-width: 1100px) {
+                      label {
+                        font-size: 22px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      label {
+                        font-size: 20px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      label {
+                        font-size: 16px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      label {
+                        font-size: 12px;
+                      }
+                    }	
+                h6 {
+                  font-size: 16px;
+                  font-weight: medium;
+                  font-family: Metropolis, sans-serif;
+                  display: block;
+                  position: relative;
+                  padding-left: 30px;
+                  color: #1C428A;
+                  justify-content: center;
+                  line-height: 1.15;
+                }
+                    @media (max-width: 1100px) {
+                      h6 {
+                        font-size: 14.5px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                     h6 {
+                        font-size: 13px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                     h6 {
+                        font-size: 10.5px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                     h6 {
+                        font-size: 8px;
+                      }
+                    }	
+                label:before {
+                  content: " ";
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: transparent transparent transparent black;
+                  height:0;
+                  font-size: 0;
+                  position: absolute;
+                  top: 10px;
+                  left: 10px;
+                  transition: transform 0.5s;
+                  transform-origin: 3px center;
+                }
+                    @media (max-width: 1100px) {
+                      label:before {
+                        border-width: 9px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      label:before {
+                        fborder-width: 8.5px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      label:before {
+                        border-width: 6.5px;
+                      }
+                    }
+                
+                    @media (max-width: 600px) {
+                      label:before {
+                        border-width: 5px;
+                      }
+                    }	
+            
+                .accordian section {
+                  font-size: 24px;
+                  background-color: #1d2a31;
+                  color: white;
+                  width: 100%;
+                  height:0px;
+                  overflow:hidden;
+                  opacity:0;
+                  border-radius: 10px 10px 10px 10px;
+                }
+             
+            
+                input:checked ~ label:before {
+                  transform: rotate(90deg)
+                }
+            
+                input:checked ~ section {
+                  padding: 10px;
+                  opacity: 1;
+                  height: auto;
+                }
+                
+                .black-section {
+                    background-color: #1d2a31;
+                    color: white;
+                    padding-left:20px;
+                    padding-bottom: 20px;
+                    width: 50%;
+                    float: left;
+                    border-radius: 10px 10px 10px 10px;
+                  }
+                    @media (max-width: 1100px) {
+                      .black-section {
+                        padding-left:18px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .black-section {
+                        padding-left:17px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .black-section {
+                        padding-left:13px;
+                      }
+                    }
+                    
+                    @media (max-width: 600px) {
+                      .black-section {
+                        padding-left:10px;
+                      }
+                    }
+                .black-section p {
+                   font-size: 24px;
+                   align-items: center;
+                   font-weight: bold;
+                   line-height: 1.5;
+                   margin-bottom: -20px;
+                 }
+                    @media (max-width: 1100px) {
+                      .black-section p {
+                        font-size: 22px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .black-section p {
+                        font-size: 20px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .black-section p {
+                        font-size: 16px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .black-section p {
+                        font-size: 12px;
+                      }
+                    }
+                 
+                .black-section h2 {
+                   font-size: 20px;
+                   align-items: center;
+                   font-weight: bold;
+                   line-height: 1.5;
+                }
+                    @media (max-width: 1100px) {
+                      .black-section h2 {
+                        font-size: 18px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .black-section h2 {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .black-section h2 {
+                        font-size: 13px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .black-section h2 {
+                        font-size: 10px;
+                      }
+                    }
+                .black-section a {
+                   	font-size: 18px;
+                   	color: #FFFFFF;
+            		text-decoration: none;
+            		align-items: center;
+            		justify-content: center;
+            		border-bottom: 2px solid transparent;
+            		transition: border-bottom-color 0.3s ease-in-out;
+                  }
+                    @media (max-width: 1100px) {
+                      .black-section a {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .black-section a {
+                        font-size: 15px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .black-section a {
+                        font-size: 12px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .black-section a {
+                        font-size: 9px;
+                      }
+                    } 
+                    
+                .black-section h3 {
+                   	font-size: 18px;
+                   	font-weight: normal;
+                   	color: #FFFFFF;
+            		text-decoration: none;
+            		margin: 0 0px;
+            		padding: 0px 0;
+            		margin-right: 18px;
+                  }
+                    @media (max-width: 1100px) {
+                      .black-section h3 {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .black-section h3 {
+                        font-size: 15px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .black-section h3 {
+                        font-size: 12px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .black-section h3 {
+                        font-size: 9px;
+                      }
+                    }
+                .black-section h4 {
+                   	font-size: 16px;
+                   	font-weight: normal;
+                   	color: #0091DA;
+            		text-decoration: none;
+            		margin: 0 0px;
+            		padding-top:0px;
+            		padding-right:10px;
+            		display:flex;
+            		align-items:center;
+                  }
+                    @media (max-width: 1100px) {
+                      .black-section h4 {
+                        font-size: 14.5px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .black-section h4 {
+                        font-size: 13px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .black-section h4 {
+                        font-size: 10.5px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .black-section h4 {
+                        font-size: 8px;
+                      }
+                    }
+                .black-section a:hover {
+            		border-bottom-color: #0091DA;
+            		color:#0091DA;
+            		}
+            		
+            	.black-section .active {
+            		border-bottom-color: #FFFFFF;
+            		}
+            		
+                .black-section h4 span {
+                  font-size: 1.8em;
+                  margin-right: 0.5em;
+                }	
+                .white-section {
+                    background-color: white;
+                    color: black;
+                    width: 50%;
+                    float:right;
+                    border-radius: 0px 10px 10px 0px;
+                    padding-left:20px;
+                    padding-bottom: 20px;
+                }
+                 @media (max-width: 1100px) {
+                      .white-section {
+                        padding-left:18px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .white-section {
+                        padding-left:17px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .white-section {
+                        padding-left:13px;
+                      }
+                    }
+                    
+                    @media (max-width: 600px) {
+                      .white-section {
+                        padding-left:10px;
+                      }
+                    }
+                  .white-section p {
+                   font-size: 24px;
+                   align-items: center;
+                   font-weight: bold;
+                   line-height: 1.5;
+                   margin-bottom: -20px;
+                 }
+                @media (max-width: 1100px) {
+                      .white-section p {
+                        font-size: 22px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .white-section p {
+                        font-size: 20px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .white-section p {
+                        font-size: 16px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .white-section p {
+                        font-size: 12px;
+                      }
+                    }     
+                .white-section h2 {
+                   font-size: 20px;
+                   align-items: center;
+                   font-weight: bold;
+                   line-height: 1.5;
+                }
+                    @media (max-width: 1100px) {
+                      .white-section h2 {
+                        font-size: 18px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .white-section h2 {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .white-section h2 {
+                        font-size: 13px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .white-section h2 {
+                        font-size: 10px;
+                      }
+                    }    
+                .white-section a {
+                   	font-size: 18px;
+                   	color: #000000;
+            		text-decoration: none;
+            		align-items: center;
+            		justify-content: center;
+            		margin: 0 0px;
+            		padding: 0px 0;
+            		border-bottom: 2px solid transparent;
+            		transition: border-bottom-color 0.3s ease-in-out;
+                  }
+                    @media (max-width: 1100px) {
+                      .white-section a {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .white-section a {
+                        font-size: 15px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .white-section a {
+                        font-size: 12px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .white-section a {
+                        font-size: 9px;
+                      }
+                    } 
+                .white-section h3 {
+                   	font-size: 18px;
+                   	font-weight: normal;
+                   	color: #000000;
+            		text-decoration: none;
+            		margin: 0 0px;
+            		padding: 0px 0;
+                  }
+                    @media (max-width: 1100px) {
+                      .white-section h3 {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .white-section h3 {
+                        font-size: 15px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .white-section h3 {
+                        font-size: 12px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .white-section h3 {
+                        font-size: 9px;
+                      }
+                    }   
+                .white-section h4 {
+                   	font-size: 16px;
+                   	font-weight: normal;
+                   	color: #1C428A;
+            		text-decoration: none;
+            		margin: 0 0px;
+            		padding-top: 5px;
+            		padding-right: 10px;
+            		display:flex;
+            		align-items:center;
+                  }
+                    @media (max-width: 1100px) {
+                      .white-section h4 {
+                        font-size: 14.5px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .white-section h4 {
+                        font-size: 13px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .white-section h4 {
+                        font-size: 10.5px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .white-section h4 {
+                        font-size: 8px;
+                      }
+                    }
+                .white-section h4 span {
+                  font-size: 1.8em;
+                  margin-right: 0.5em;
+                  color: #1C428A;
+                }
+                .white-section a:hover {
+            		border-bottom-color: #1C428A;
+            		color:#1C428A;
+            		}
+            		
+            	.white-section .active {
+            		border-bottom-color: #000000;
+            		}  
+               
+               .white-section img {
+            			height: 300px;
+            			margin-right: 10px;
+            			float: right;
+            			position: right;
+            		}
+            		@media (max-width: 1100px) {
+                      .white-section img {
+                        height: 275px;
+                      }
+                     }
+            		@media (max-width: 1000px) {
+                      .white-section img {
+                        height: 200px;
+                      }
+                     }
+                    @media (max-width: 800px) {
+                      .white-section img {
+                        height: 150px;
+                        
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .white-section img {
+                        height: 0px;
+                      }
+                    }	
+            
+                .checklist {
+            			display: flex;
+            			flex-direction: column;
+            			align-items: left;
+            			margin-top: 20px;
+            			margin-left: 40px;
+            		}
+                    @media (max-width: 1100px) {
+                      .checklist {
+                        margin-left: 30px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .checklist {
+                        margin-left: 20px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .checklist {
+                        margin-left: 10px;
+                      }
+                    }
+                    
+                    @media (max-width: 600px) {
+                      .checklist {
+                        margin-left: 5px;
+                      }
+                    }  
+                    
+            		.checklist-item {
+            		    display:flex;
+            			align-items: center;
+            			font-size: 18px;
+            			margin-bottom: 10px;
+            		}
+            
+            		.checklist-item input[type="checkbox"] {
+            			margin-right: 10px;
+            			-webkit-appearance: none;
+            			-moz-appearance: none;
+            			appearance: none;
+            			width: 20px;
+            			height: 20px;
+            			border-radius: 0%;
+            			border: 2px solid #FFFFFF;
+            			outline: none;
+            			cursor: pointer;
+            			display: inline-block;
+            			position: relative;
+            			top: 0px;
+            		}
+            
+                    @media (max-width: 1100px) {
+                      .checklist-item input[type="checkbox"] {
+                        width: 18px;
+            			height: 18px;
+            			border: 1.8px solid #FFFFFF;
+            			margin-right: 9px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .checklist-item input[type="checkbox"] {
+                        width: 16px;
+            			height: 16px;
+            			border: 1.6px solid #FFFFFF;
+            			margin-right: 8.5px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .checklist-item input[type="checkbox"] {
+                        width: 14px;
+            			height: 14px;
+            			border: 1.4px solid #FFFFFF;
+            			margin-right: 6.5px;
+                      }
+                    }
+                    
+                    @media (max-width: 600px) {
+                      .checklist-item input[type="checkbox"] {
+                        width: 10px;
+            			height: 10px;
+            			border: 1px solid #FFFFFF;
+            			margin-right: 5px;
+                      }
+                    }  
+                    
+            		.checklist-item input[type="checkbox"]:checked:after {
+            			content: '\2714';
+            			font-size: 20px;
+            			position: absolute;
+            			top: -2px;
+            			left: 2px;
+            			color: #FFFFFF;
+            		}
+                    @media (max-width: 1100px) {
+                      .checklist-item input[type="checkbox"]:checked:after {
+                      font-size: 18px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .checklist-item input[type="checkbox"]:checked:after {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .checklist-item input[type="checkbox"]:checked:after {
+                        font-size: 13px;
+                      }
+                    }
+                    
+                    @media (max-width: 600px) {
+                      .checklist-item input[type="checkbox"]:checked:after {
+                        font-size: 10px;
+                      }
+                      }
+            		.checklist-item-a {
+            			display:flex;
+            			align-items: center;
+            			font-size: 18px;
+            			margin-bottom: 10px;
+            		}
+            		.checklist-item-a input[type="checkbox"] {
+            			margin-right: 10px;
+            			-webkit-appearance: none;
+            			-moz-appearance: none;
+            			appearance: none;
+            			width: 20px;
+            			height: 20px;
+            			border-radius: 0%;
+            			border: 2px solid #1d2a31;
+            			outline: none;
+            			cursor: pointer;
+            			display: inline-block;
+            			position: relative;
+            			top: 0px;
+            		}
+                    @media (max-width: 1100px) {
+                        .checklist-item-a input[type="checkbox"] {
+                        width: 18px;
+            			height: 18px;
+            			border: 1.8px solid #1d2a31;
+            			margin-right: 9px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .checklist-item-a input[type="checkbox"] {
+                        width: 16px;
+            			height: 16px;
+            			border: 1.6px solid #1d2a31;
+            			margin-right: 8.5px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .checklist-item-a input[type="checkbox"] {
+                        width: 14px;
+            			height: 14px;
+            			border: 1.4px solid #1d2a31;
+            			margin-right: 6.5px;
+                      }
+                    }
+                    
+                    @media (max-width: 600px) {
+                      .checklist-item-a input[type="checkbox"] {
+                        width: 10px;
+            			height: 10px;
+            			border: 1px solid #1d2a31;
+            			margin-right: 5px;
+                      }
+                    }  
+                    
+            
+            		.checklist-item-a input[type="checkbox"]:checked:after {
+            			content: '\2714';
+            			font-size: 20px;
+            			position: absolute;
+            			top: -2px;
+            			left: 2px;
+            			color: #1d2a31;
+            		}
+                    @media (max-width: 1100px) {
+                      .checklist-item-a input[type="checkbox"]:checked:after {
+                      font-size: 18px;
+                      }
+                    }
+                    @media (max-width: 1000px) {
+                      .checklist-item-a input[type="checkbox"]:checked:after {
+                        font-size: 17px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      .checklist-item-a input[type="checkbox"]:checked:after {
+                        font-size: 13px;
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      .checklist-item-a input[type="checkbox"]:checked:after {
+                        font-size: 10px;
+                      }
+                      }
+            </style>
+            
+             <div class="accordian">
+            	<input type="checkbox" id="trigger1">
+            	<label for="trigger1">Module 1 Track</label>
+            	<h6> Module 1 Provides Information on How to Set Up Organizations and Roles and Configure Your Accounts. Additionally, Learn How to Navigate the Platform and Create Powerful Perspectives.</h6>
+            	<section>
+            	
+                <div class="black-section">
+                  <p>Training Resources:</p>
+            
+                  <div class="checkbox-container">
+            				<div class="checkbox-item">
+            					<div class="checkbox"></div>
+            				</div>
+            				<div class="checklist">
+            				<br>
+            		<h4><span>☞</span> Training Tip: Ensure you watch all videos within each cloud specific training path </h4>
+            		<h2>Organizations and Roles Configuration</h2>
+            		<h3>The following trainings will help you configure your Organizations and Roles:</h3>
+            		<br>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/78/creating-a-custom-role-all-clouds" target="_blank">Creating a Custom Role</a></h3></span>
+            			</div>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/412/creating-and-managing-flexorgs-all-clouds" target="_blank">Creating and Managing FlexOrgs</a></h3></span>
+            			</div>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/413/creating-and-managing-user-groups-all-clouds" target="_blank">Creating and Managing User Groups</a></h3></span>
+            			</div>
+            		<h2>Account Configuration</h2>
+            		<h3>The following training paths will help you configure your accounts:</h3>
+            		<br>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/23" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/57" target="_blank">Azure</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/24" target="_blank">Data Center</a></h3></span>
+            			</div>
+            				<h2>Introduction to the Platform</h2>
+            				<h3>The following cloud specific training paths will help introduce you to the platform:</h3>
+            				<br>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/293/intro-to-the-cloudhealth-platform-elearning-aws" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/587/intro-to-the-cloudhealth-platform-elearning-gcp" target="_blank">GCP</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/339/intro-to-the-cloudhealth-platform-elearning-azure" target="_blank">Azure</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/30" target="_blank">Data Center</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/90/intro-to-the-cloudhealth-platform-webinar" target="_blank">Enroll in the Intro to the Platform Instructor-Led Session (Optional)</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/294/intro-to-the-cloudhealth-platform-hands-on-activities" target="_blank">Intro to the Platform Hands On Activities (Optional)</a></h3></span>
+            			</div>
+            		<h2>Perspectives Management</h2>
+            		<h3>Now that you have your accounts and users configured, begin getting familiar with the platform's functionalities</h3>
+            		<br>	
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/26" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/27" target="_blank">Azure</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/47" target="_blank">GCP</a></h3></span>
+            			</div>
+            		</div>
+            	</div>
+                </div>
+                <div class="white-section">
+                  <p>Customer Goals:</p>
+                  <div class="checkbox-container">
+            				<div class="checkbox-item-a">
+            					<div class="checkbox"></div>
+            				</div>
+            				<div class="checklist">
+            				<h2>Configure Users</h2>
+            				<h3>Follow these steps below to setup users:</h3>
+            				<br>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-working-with-flexorgs.html/" target="_blank">Step 1: Add Flexorgs (Optional)</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-managing-classic-organizations-if-applicable.html#:~:text=for%20all%20organizations.-,Create%20a%20Custom%20Role%20(Optional),-Create%20a%20custom" target="_blank">Step 2: Add Custom Roles (Optional)</a><h 3="">
+            			</h></h3></span></div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+                			<span><h3>Step 3:<a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-managing-sso.html" target="_blank"> Add Users Via SSO </a> OR <a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-managing-classic-organizations-if-applicable.html#:~:text=modifying%20the%20copy.-,Invite%20Users%20to%20VMware%20Aria%20Cost%20Via%20VMware%20Aria%20Cost%20Platform,-Invite%20people%20in" target="_blank"> the Platform</a></h3></span>
+            			</div>
+            			<h2>Configure Accounts</h2>
+            			<h3>Set up the following <a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-vmware-aria-cost.html" target="_blank">platforms</a> in accordance with your contract:</h3>
+            			<br>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-aws-quick-start.html" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-azure-quick-start.html" target="_blank">Azure</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-gcp-quick-start.html" target="_blank">GCP</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-data-center-quick-start.html" target="_blank">Data Center</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-vmware-quick-start.html" target="_blank">VMware Cloud</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-alibaba-cloud-quick-start.html" target="_blank">Alibaba Cloud</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-oracle-quick-start.html" target="_blank">Oracle Cloud</a></h3></span>
+            			</div>
+            			<h2>Configure Metrics Collection</h2>
+            			<h3>Configure metrics collection using any of the following methods:</h3>
+            			<br>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://help.cloudhealthtech.com/integrations/" target="_blank">Third Party Metrics (Data Dog, New Relic, Wavefront)</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://apidocs.cloudhealthtech.com/#metrics_introduction-to-metrics-api" target="_blank">Metrics API</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-integrating-with-services.html#integrate-with-vmware-aria-cost-agent-6" target="_blank">VMware Aria Cost Agent</a></h3></span>
+            			</div>
+            			<h4><span>☞</span> Setup Tip: Configure metrics for as many assets as possible to increase the accuracy of rightsizing recommendations</h4>
+            			<h2>Configure Perspectives</h2>
+            			<h3>Follow the steps below to setup Perspectives:</h3>
+            			<br>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-introduction-to-perspectives.html" target="_blank">Step 1: Configure Perspectives</a><!--3-->
+            			</h3></span></div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-cost-reports.html" target="_blank">Step 2: Configure Cost Reallocation Rules (Optional)</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://apidocs.cloudhealthtech.com/#perspectives_introduction-to-perspectives-api" target="_blank">Perspectives API</a></h3></span>
+            			</div>
+                        <h4><span>☞</span> Setup Tip: Use the Perspectives API to setup complex perspectives</h4>
+            				</div>
+                </div>
+              
+            	</div></section>
+            	<br>
+            
+            
+             </div>
+              
+              <div class="accordian">
+            	<input type="checkbox" id="trigger2">
+            	<label for="trigger2">Module 2 Track</label>
+            	<h6> Module 2 Dives Into Reporting and Analyzing. Learn How to Identify Spending Patterns Through Cost and Usage Analysis. Continue Perspectives Management and Create Budgets. </h6>
+            <section>
+            	
+                <div class="black-section">
+                  <p>Training Resources:</p>
+            
+                  <div class="checkbox-container">
+            				<div class="checkbox-item">
+            					<div class="checkbox"></div>
+            				</div>
+            				<div class="checklist">
+            				<br>
+            		<h4><span>☞</span> Training Tip: Ensure you watch all videos within each cloud specific training path </h4>
+            		<h2>Perspectives Management Continued:</h2>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/482/tagging-and-perspectives-best-practices-recording-cloudlive?generated_by=209010&amp;hash=f74f666745aa4badc286c5b7ea0780b59fc1d0db" target="_blank">Tagging and Best Practices</a></h3></span>
+            			</div><br>
+            		<h3>The following trainings will help you build Perspective Based Policies:</h3>
+            		<br>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/49/perspective-based-policies-aws?generated_by=209010&amp;hash=8f3b1c1f4d6ed9fc14b42f188a00cb9e1baf3de0" target="_blank">AWS</a></h3></span>
+            			</div>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/63/perspective-based-policies-azure?generated_by=209010&amp;hash=014fcae3e41a725a8301db347003a8ed2e64002d" target="_blank">Azure</a></h3></span>
+            			</div>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/375/perspective-based-policies-gcp?generated_by=209010&amp;hash=7c67348f631b7963979b7e7d1ac72fe3d22e8ac5" target="_blank">GCP</a></h3></span>
+            			</div>
+            		<h2>Cost and Usage Reporting</h2>
+            		<h3>The following training paths will help you understand and create reports based on your needs:</h3>
+            		<br>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/31" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/32" target="_blank">Azure</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/48" target="_blank">GCP</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/119" target="_blank">All Clouds</a></h3></span>
+            			</div>
+            				<h2>Configure Custom Dashboards</h2>
+            				<h3>Learn how to create custom dashboards:</h3>
+            				<br>
+            				<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/77/building-a-custom-dashboard-aws?generated_by=209010&amp;hash=4bcf434deaf77c84d2729531002e6f688be66439" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/582/building-a-custom-dashboard-azure?generated_by=209010&amp;hash=13c920365adcf580ae09a2eca0aa6721695070a4" target="_blank">Azure</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/583/building-a-custom-dashboard-gcp?generated_by=209010&amp;hash=b0579bece7228561929b96a354a3b34fc73b6eca" target="_blank">GCP</a></h3></span>
+            			</div>
+            		<h2>Building Your Annual Cloud Budgets</h2>
+            		<h3>Discover how to input budgets and compare them against actual spend:</h3>
+            		<br>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/458/building-your-annual-cloud-budgets-recording-pop?generated_by=209010&amp;hash=e9edf14323581d08bb3316fb35312af0e4da8616" target="_blank">Building Your Annual Cloud Budgets</a></h3></span>
+            			</div>
+                        <div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com//lms/index.php?r=coursepath/deeplink&amp;id_path=45&amp;hash=c2a0eaa3cefb78677dbaed3e3823ea12983417ef&amp;generated_by=209010" target="_blank">Report and Analyze (Optional)</a></h3></span>
+            			</div>
+            		</div>
+            	</div>
+                </div>
+                <div class="white-section">
+                  <p>Customer Goals:</p>
+                  <div class="checkbox-container">
+            				<div class="checkbox-item-a">
+            					<div class="checkbox"></div>
+            				</div>
+            				<div class="checklist">
+            				<h2>Managing Perspectives Continued: </h2>
+            				<h3>Follow these steps below to begin managing your Perspectives:</h3>
+            				<br>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-managing-perspectives.html" target="_blank">Manage Perspective Groups</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-tag-management.html" target="_blank">Manage Tagging</a><h 3="">
+            			</h></h3></span></div>
+            			<h2>Cost and Usage Reporting</h2>
+            			<h3>Begin to create cost and usage reports in the platform:</h3>
+            			<br>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-cloudhealth-reports.html" target="_blank">Getting Started with Reports</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-cloudhealth-reports.html#actions-and-subscriptions-22" target="_blank">Actions and Subscriptions</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-flexreports.html" target="_blank">FlexReports</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-cost-reports.html" target="_blank">Cost Reports</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-usage-reports.html" target="_blank">Usage Reports</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-custom-line-items.html" target="_blank">Custom Line Items</a></h3></span>
+            			</div>
+            			<h2>Create Custom Dashboards</h2>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-cloudhealth-dashboards.html" target="_blank">Getting Started with Dashboards</a></h3></span>
+            			</div><br>
+            			<h3>Create multiple custom cloud-specific dashboards:</h3>
+            <br>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-aws-dashboard.html" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-azure-dashboard.html" target="_blank">Azure</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-gcp-dashboard.html" target="_blank">GCP</a></h3></span>
+            			</div>
+            			<h4><span>☞</span> Tip: Create multiple custom dashboards, focused toward specific users in your organization, and subscribe users to respective dashboards.</h4>
+            			<h2>Configure Budgets</h2>
+            			<h3>Budgets allow you to visualize expected costs and compare with actual spend:</h3>
+            			<br>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-aws-governance-using-policies.html#configure-budgets-in-vmware-aria-cost-37" target="_blank">Configure Budgets in VMware Aria Cost</a></h3></span>
+            			</div>
+                        <h4><span>☞</span> Setup Tip: Enter multiple budgets to view your data by overall budget or categorize by different perspectives. </h4>
+            				</div>
+                </div>
+              
+            	</div></section>
+            	<br>
+            
+            
+             </div>
+             
+            
+              
+              <div class="accordian">
+            	<input type="checkbox" id="trigger3">
+            	<label for="trigger3">Module 3 Track</label>
+            	<h6>Module 3 Will Teach You How to Secure and Manage Your Cloud. Create Rightsizing Infrastructure, Manage Reservations, and View Security Recommendations. Learn How to Leverage Containers Management for In-Depth Reporting. </h6>
+            <section>
+            	
+                <div class="black-section">
+                  <p>Training Resources:</p>
+            
+                  <div class="checkbox-container">
+            				<div class="checkbox-item">
+            					<div class="checkbox"></div>
+            				</div>
+            				<div class="checklist">
+            				<br>
+            		<h4><span>☞</span> Training Tip: Ensure you watch all videos within each cloud specific training path </h4>
+            		<h2>Governance, Policies, and Automation</h2>
+            		<h3>Create guardrails in your environment with alert policies and take action with automation:</h3>
+            	    <br> 
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/33" target="_blank">AWS</a></h3></span>
+            			</div>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/34" target="_blank">Azure</a></h3></span>
+            			</div>
+            		<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/49" target="_blank">GCP</a></h3></span>
+            			</div>
+            		<h2>Performance and Rightsizing</h2>
+            		<h3>This course is designed to provide you with the information needed to downgrade or terminate your Instances or VMs based on utilization:</h3>
+            		<br>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/35" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/36" target="_blank">Azure</a></h3></span>
+            			</div>
+            				<h2>Reserved Instance Management</h2>
+            				<h3>Determine how well your reservations are being utilized or how to better manage your Reserved Virtual Machines:</h3>
+            				<br>
+            				<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/37" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/53" target="_blank">Azure</a></h3></span>
+            			</div>
+            				<h2>Security</h2>
+            				<h3>Monitor your accounts, services and resources and perform checks against the providers security and CIS best practices, as well as identify open ports:</h3>
+            				<br>
+            				<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/51" target="_blank">AWS</a></h3></span>
+            			</div>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/55" target="_blank">Azure</a></h3></span>
+            			</div>
+            		<h2>Containers</h2>
+            		<h3>Learn how to configure your Container environment and use reports:</h3>
+            		<br>
+            			<div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/75" target="_blank">ECS Container Configuration</a></h3></span>
+            			</div>
+                        <div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/99" target="_blank">Containers Management</a></h3></span>
+            			</div>
+                        <div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/76" target="_blank">Kubernetes and Mesos Configuration</a></h3></span>
+            			</div>
+                        <div class="checklist-item">
+            				<input type="checkbox">
+            				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/52" target="_blank">Container Reporting</a></h3></span>
+            			</div>
+            		</div>
+            	</div>
+                </div>
+                <div class="white-section">
+                  <p>Customer Goals:</p>
+                  <div class="checkbox-container">
+            				<div class="checkbox-item-a">
+            					<div class="checkbox"></div>
+            				</div>
+            				<div class="checklist">
+            				<br>
+            				<h4><span>☞</span> Tip: Complete only the goals relevant to your instance. Feel free to skip the others</h4>
+            				<h2>Create Cloud-Specific Governance Policies: </h2>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-policies.html" target="_blank">Getting Started with Policies</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-aws-governance-using-policies.html" target="_blank">AWS Governance using Policies</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-azure-governance-using-policies.html" target="_blank">Azure Governance using Policies</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-gcp-governance-using-policies.html" target="_blank">GCP Governance using Policies</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-oracle-cloud-governance.html" target="_blank">Oracle Cloud Governance using Policies</a></h3></span>
+            			</div>
+            			<h2>Create Cloud-Specific Best Practice Policies: </h2>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-aws-best-practice-policies.html" target="_blank">AWS Best Practice Policies</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-azure-best-practice-policies.html" target="_blank">Azure Best Practice Policies</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-gcp-best-practice-policies.html" target="_blank">GCP Best Practice Policies</a></h3></span>
+            			</div>
+            			<h2>Work with Recommendations and Improve Performance: </h2>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-aws-rightsizing-new.html" target="_blank">AWS Rightsizing - New</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-aws-rightsizing-classic.html" target="_blank">AWS Rightsizing - Classic</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-azure-rightsizing-new.html" target="_blank">Azure Rightsizing - New</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-azure-rightsizing-classic.html" target="_blank">Azure Rightsizing - Classic</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-gcp-rightsizing.html" target="_blank">GCP Rightsizing</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-data-center-rightsizing.html" target="_blank">Data Center Rightsizing</a></h3></span>
+            			</div>
+            			<h2>Manage your Reserved Instances: </h2>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-aws-reservation-management.html" target="_blank">AWS Reservation Management</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-azure-reservation-management.html" target="_blank">Azure Reservation Management</a></h3></span>
+            			</div>
+            			<h2>Create Security Reports:</h2>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-security-reports.html" target="_blank">Security Reports</a></h3></span>
+            			</div>
+            			<h2>Create Reports and Manage Containers:</h2>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-container-cost-reports.html" target="_blank">Container Cost Reports</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-container-usage-reports.html" target="_blank">Container Usage Reports</a></h3></span>
+            			</div>
+            			<h2>Create Automations (Optional):</h2>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-anomaly-detection.html" target="_blank">Anomaly Detection</a></h3></span>
+            			</div>
+            			<div class="checklist-item-a">
+            				<input type="checkbox">
+            				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-savings-automator.html" target="_blank">Savings Automator</a></h3></span>
+            			</div>
+                </div>
+              
+            	</div></div></section>
+            	<br>
+            
+             </div>
+            
+             
+            	<title>Footer</title>
+            	<style>
+            		body {
+            			background-color: #FFFFFF;
+            			margin: 0;
+            			padding: 0;
+            			font-family: 'Metropolis', sans-serif;
+            			color: #000000;
+            		}
+            
+            		footer {
+            			background-color: #000000;
+            			padding: 40px;
+            			display: flex;
+            			flex: 1;
+            			align-items: center;
+            			justify-content: space-between;
+            			color: #FFFFFF;
+            			flex-shrink: 0;
+            		}
+            
+            		footer img {
+            			height: 50px;
+            			margin-right: 10px;
+            		}
+            		@media (max-width: 1000px) {
+                      footer img {
+                        height: 40px;
+                      }
+                     }
+                    @media (max-width: 800px) {
+                      footer img {
+                        height: 30px;
+                        
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      footer img {
+                        height: 25px;
+                      }
+                    }	
+            
+            		footer p {
+            			margin: 0;
+            			font-size: 14px;
+            		}
+            		@media (max-width: 1000px) {
+                      footer p {
+                        font-size: 13px;
+                      }
+                    }
+                    @media (max-width: 800px) {
+                      footer p {
+                        font-size: 10px;
+                      }
+                    }
+                    
+                    @media (max-width: 600px) {
+                      footer p {
+                        font-size: 7px;
+                      }
+                    }	
+            	</style>
+            
+            
+            	<footer>
+            		<img src="./OnboardingChecklist_files/vmware-prod-icon-aria-cost-rgb-horiz.svg" alt="Logo">
+            		<p>© VMware 2023 - All rights reserved.</p>
+            	</footer>
+            	
+            	
+            
+            
+        </div>
+
+</div>
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
