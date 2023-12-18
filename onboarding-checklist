@@ -3,53 +3,721 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>My Website</title>
+	<title>Onbaording Checklist</title>
+
+<!-- Inline CSS -->
+<style> 
+  body {
+    background-color: #1D2A31;
+    margin: 0;
+    padding: 0;
+    font-family: 'Metropolis', sans-serif;
+    color: #000000;
+    
+  }
+  .section-container-b {
+  max-width: 100vw;
+  background-color: #FFFFFF;
+  flex-grow: 1;
+  position: relative;
+  overflow: auto; 
+}
+
+
+</style>
+<!-- Announcement CSS -->
 <style>
-  .announcement-announcement {
-    gap: var(--dl-space-space-halfunit);
-    flex: 1;
-    cursor: pointer;
-    display: flex;
-    position: relative;
-    transition: 0.3s;
-    align-items: flex-start;
-    padding-top: 16px;
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-oneandhalfunits);
-    justify-content: center;
+ .announcement-announcement {
+  gap: 0.5em;
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+  align-items: flex-start;
+  padding-top: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 0.75em;
+  background-color: #1c428a;
+  width: 100%;
+}
+
+.announcement-announcement:hover {
+  box-shadow: 0.625em 0.625em 0.9375em 0px #d4d4d4;
+}
+
+.announcement-title {
+  color: #8AEDE8;
+  font-size: 1em;
+  font-family: Metropolis, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.announcement-root-class-name {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.announcement-root-class-name1 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.announcement-announcement {
+  align-items: center;
+  flex-direction: column;
+}
+</style>
+
+<!-- Navbar CSS -->
+<style>
+.navbar {
+  background-color: #FFFFFF;
+  height: 5em;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.875em;
+}
+
+.navbar img {
+  height: 3.125em;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 0.625em;
+  padding: 0.625em 0;
+  border-bottom: 0.125em solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+  display: flex;
+}
+
+.navbar a:hover {
+  border-bottom-color: #000000;
+}
+
+.navbar .active {
+  border-bottom-color: #000000;
+}
+
+.navbar .center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 48em) {
+  body {
+    font-size: 0.875em;
+  }
+
+  .navbar {
+    height: auto;
     flex-direction: column;
-    padding-bottom: 12px;
-    background-color: #1c428a;
-    width: 100%;
+    padding: 0.625em;
   }
-  .announcement-announcement:hover {
-    box-shadow: 10px 10px 15px 0px #d4d4d4;
+
+  .navbar img {
+    margin-bottom: 0.625em;
   }
-  .announcement-title {
-    color: #8AEDE8;
-    font-size: 14px;
+
+  .navbar a {
+    padding: 0.3125em 0;
+    margin: 0.3125em;
+  }
+
+  .navbar .center {
+    margin-bottom: 0.625em;
+  }
+}
+</style>
+
+<!-- Title/Intro Section -->
+<style>
+  .section-container-a {
+  max-width: 75em;
+  margin: 0.125em auto;
+  padding: 0;
+  display: flex;
+}
+
+.section-a {
+  background-color: #FFFFFF;
+  padding: 1.25em;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  margin: 0;
+  margin-top: 0.625em;
+  border-radius: 0.625em;
+  text-align: left;
+}
+
+.section-a h2 {
+  font-size: 2.25em;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 0.3125em;
+  text-align: left;
+}
+
+.section-a p {
+  font-size: 1.5em;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 0.5em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.section-a h4 {
+  font-size: 1.125em;
+  font-weight: normal;
+  color: #717074;
+  text-decoration: none;
+  margin: 0 0;
+  padding-top: 0.3125em;
+  padding-right: 0.3125em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  line-height: 1.25;
+}
+
+.section-a h4 span {
+  font-size: 1.8em;
+  margin-right: 0.3125em;
+  color: #0091DA;
+}
+
+.section-a a {
+  color: #000000;
+  font-size: 1.125em;
+  text-decoration: none;
+  margin-top: 0.3125em;
+  align-items: center;
+  border-bottom: 0.125em solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.section-a a:hover {
+  border-bottom-color: #000000;
+}
+  </style>
+
+<!-- Main Accordion -->
+<style>
+    .accordion {
+      max-width: 75em;
+      margin: 0.1em auto;
+      padding: 0.625em;
+    }
+    
+    label:hover {
+      background-color: #f0f0f0;
+    }
+    
+    input {
+      display: none;
+    }
+    
+    label {
+      font-size: 1.5em;
+      font-family: Metropolis, sans-serif;
+      background-color: white;
+      display: block;
+      cursor: pointer;
+      padding: 0.625em 0.625em 0.3125em 1.2em;
+      position: relative;
+      justify-content: center;
+      user-select: none;
+    }
+    
+    h6 {
+      font-size: 1.125em;
+      font-weight: medium;
+      font-family: Metropolis, sans-serif;
+      display: block;
+      position: relative;
+      padding-left: 1.875em;
+      color: #1C428A;
+      justify-content: center;
+      line-height: 1.15;
+    }
+    
+    label:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0em;
+    transform: translateY(-50%);
+    transition: transform 0.5s;
+    border-width: 0.5em 0.5em; 
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+    
+    .accordion section {
+      font-size: 1.5em;
+      background-color: #1d2a31;
+      color: white;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      border-radius: 0.625em;
+    }
+    
+    input:checked ~ label:before {
+      transform: rotate(90deg);
+    }
+    
+    input:checked ~ section {
+      padding: 0.625em;
+      opacity: 1;
+      height: auto;
+    }
+  </style>
+  
+<!-- Black Section -->
+<style >
+.black-section {
+  background-color: #1d2a31;
+  color: white;
+  padding-left: 1.25em;
+  padding-bottom: 1.25em;
+  width: 50%;
+  float: left;
+  border-radius: 0.625em;
+}
+
+.black-section p {
+  font-size: 1.125em;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: -1.25em;
+}
+
+.black-section h2 {
+  font-size: 1em;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.black-section a {
+  font-size: .875em;
+  color: #ffffff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.125em solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.black-section h3 {
+  font-size: .875em;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0;
+  padding: 0;
+  margin-right: 1.125em;
+}
+
+.black-section h4 {
+  font-size: .75em;
+  font-weight: normal;
+  color: #0091da;
+  text-decoration: none;
+  margin: 0 0;
+  padding-top: 0;
+  padding-right: 0.625em;
+  display: flex;
+  align-items: center;
+}
+
+.black-section a:hover {
+  border-bottom-color: #0091da;
+  color: #0091da;
+}
+
+.black-section .active {
+  border-bottom-color: #ffffff;
+}
+
+.black-section h4 span {
+  font-size: 1.8em;
+  margin-right: 0.3125em;
+}
+</style>
+
+<!-- White Section -->
+<style>
+    .white-section {
+  background-color: white;
+  color: black;
+  width: 50%;
+  float: right;
+  border-radius: 0 0.625em 0.625em 0;
+  padding-left: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+.white-section p {
+  font-size: 1.125em;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: -1.25em;
+}
+
+.white-section h2 {
+  font-size: 1em;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-right: .685em;
+}
+
+.white-section a {
+  font-size: .875em;
+  color: #000000;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0;
+  padding: 0 0;
+  border-bottom: 0.125em solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.white-section h3 {
+  font-size: .875em;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.white-section h4 {
+  font-size: .75em;
+  font-weight: normal;
+  color: #1c428a;
+  text-decoration: none;
+  margin: 0 0;
+  padding-top: 0.3125em;
+  padding-right: 0.625em;
+  display: flex;
+  align-items: center;
+}
+
+.white-section h4 span {
+  font-size: 1.8em;
+  margin-right: 0.5em;
+  color: #1c428a;
+}
+
+.white-section a:hover {
+  border-bottom-color: #1c428a;
+  color: #1c428a;
+}
+
+.white-section .active {
+  border-bottom-color: #000000;
+}
+
+.white-section img {
+  height: auto;
+  align-content: center;
+}
+</style>
+
+<!-- Expansion Accordion -->
+<style>
+  .accordion-a {
+    max-width: 75em;
+    margin: 0.1em auto;
+    padding: 0.625em;
+  }
+  
+  label:hover {
+    background-color: #f0f0f0;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    font-size: 1.5em;
     font-family: Metropolis, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 21px;
+    background-color: white;
+    display: block;
+    cursor: pointer;
+    padding: 0.625em 0.625em 0.3125em 1.2em;
+    position: relative;
+    justify-content: center;
+    user-select: none;
   }
-  .announcement-root-class-name {
-    flex: 0 0 auto;
+  
+  h6 {
+    font-size: 1.125em;
+    font-weight: medium;
+    font-family: Metropolis, sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 1.875em;
+    color: #1C428A;
+    justify-content: center;
+    line-height: 1.15;
+  }
+  
+  label:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0em;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
+  border-width: 0.5em 0.5em; 
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+  
+  .accordion-a section {
+    font-size: 1.5em;
+    background-color: #FFFFFF;
+    color: white;
     width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    border-radius: 0.625em;
   }
-  .announcement-root-class-name1 {
-    flex: 0 0 auto;
-    width: 100%;
+  
+  input:checked ~ label:before {
+    transform: rotate(90deg);
   }
-  .announcement-announcement {
+  
+  input:checked ~ section {
+    padding: 0.625em;
+    opacity: 1;
+    height: auto;
+  }
+</style>
+<!-- Expansion Section -->
+<style>
+.expansion-section {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  background-color: white;
+  color: black;
+  width: 100%;
+  border-radius: 0 0.625em 0.625em 0;
+  padding-left: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+.expansion-section img {
+  height: 12em;
+  margin-top: 1em;
+  margin-right: 0.625em;
+}
+
+.expansion-section p {
+  font-size: 1.125em;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: -1.25em;
+}
+
+.expansion-section h2 {
+  font-size: 1em;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.expansion-section a {
+  font-size: .875em;
+  color: #000000;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0;
+  padding: 0 0;
+  border-bottom: 0.125em solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.expansion-section h3 {
+  font-size: .875em;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.expansion-section h4 {
+  font-size: .75em;
+  font-weight: normal;
+  color: #1c428a;
+  text-decoration: none;
+  margin: 0 0;
+  padding-top: 0.3125em;
+  padding-right: 0.625em;
+  display: flex;
+  align-items: center;
+}
+
+.expansion-section h4 span {
+  font-size: 1.8em;
+  margin-right: 0.5em;
+  color: #1c428a;
+}
+
+.expansion-section a:hover {
+  border-bottom-color: #1c428a;
+  color: #1c428a;
+}
+
+.expansion-section .active {
+  border-bottom-color: #000000;
+}
+
+</style>
+  
+<!-- Checklist  -->
+<style>
+  .checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 1.25em;
+  margin-left: .875em;
+}
+
+.checklist-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.125em;
+  margin-bottom: 0.625em;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-right: 0.625em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 1.25em;
+  min-height: 1.25em;
+  border-radius: 0%;
+  border: 0.175em solid #ffffff;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+}
+
+.checklist-item input[type="checkbox"]:checked:after {
+  content: '\2714';
+  font-size: 1.25em;
+  position: absolute;
+  top: -0.125em;
+  left: 0.125em;
+  color: #ffffff;
+}
+
+.checklist-item-a {
+  display: flex;
+  align-items: center;
+  font-size: 1.125em;
+  margin-bottom: 0.625em;
+}
+
+.checklist-item-a input[type="checkbox"] {
+  margin-right: 0.625em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-width: 1.25em;
+  min-height: 1.25em;
+  border-radius: 0%;
+  border: 0.175em solid #1d2a31;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+}
+
+.checklist-item-a input[type="checkbox"]:checked:after {
+  content: '\2714';
+  font-size: 1.25em;
+  position: absolute;
+  top: -0.125em;
+  left: 0.125em;
+  color: #1d2a31;
+}
+</style>
+
+<!-- Footer  -->
+<style>
+  footer {
+    background-color: #1D2A31;
+    padding: 2.5em;
+    display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    width:100%;
+    flex-shrink: 0;
+  }
+
+  footer img {
+    height: 3.125em;
+    margin-right: 0.625em;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.875em;
   }
 </style>
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metropolis">
+<!-- HTML -->
+<html>
 <body>
+<div class="section-container-b">
+  <!--  page main body here -->
+
+<!-- Announcement HTML -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metropolis">
   <div>
     <a href="https://ariacostcs.gainsightcloud.com/v1/sites/onboardinghelpform" target="_blank">
       <div class="announcement-announcement">
@@ -58,131 +726,854 @@
       </div>
     </a>
   </div>
-</body>
 
-  
-  <div class="accordian">
-	<input type="checkbox" id="trigger3"/>
-	<label for="trigger3">Module 3 Track</label>
-	<h6> Module 3 Module 3 Will Teach You How to Secure and Manage Your Cloud. Create Rightsizing Infrastructure, Manage Reservations, and View Security Recommendations. Learn How to Leverage Containers Management for In-Depth Reporting. </h6>
+<!-- Navbar HTML -->
+	<nav class="navbar">
+		<div class="left">
+			<img src="https://cloudhealth.vmware.com/content/dam/digitalmarketing/vmware/en/images/gallery/logos/vmware-prod-icon-aria-cost-rgb-horiz.svg" alt="Your Image">
+		</div>
+		<div class="tabs">
+			<a href="https://ariacostcs.gainsightcloud.com/v1/sites/onboardingchecklist" target="_blank">Onboarding Checklist</a>
+			<a href="https://apps.cloudhealthtech.com/docebo/sso_login" target="_blank">Training Academy</a>
+			<a href="https://docs.vmware.com/en/VMware-Aria-Cost-powered-by-CloudHealth/index.html" target="_blank">Help Center</a>
+			<a href="https://support.cloudhealthtech.com/hc/en-us" target="_blank">Knowledge Base</a>
+		</div>
+	</nav>
 
+<!-- Title/Intro Section HTML -->
+<div class="section-container-a">
+  <section class="section-a">
+    <h2>Welcome to the Onboarding Checklist</h2>
+    <p>Each Training is Recommended in Order to Take Full Advantage of the VMware Aria Cost Platform</p>
+    <br></br>
+<h4>The onboarding checklist provides step-by-step training and configuration guidance in order to help you utilize the platform to its maximum potential. Each module is designed to ensure that you are given the tools to understand the platform and configure it to your liking!</h4>
+<br />
+<h4><span>&#9758;</span> Note: Every training is designed to ensure you can complete the Customer Goals listed. However, if you feel you need additional help, each goal is linked to a help article to ensure you have all the resources you need!</h4>
+  </section>
+</div>
+
+<!-- Module 1 -->
+ <div class="accordion">
+	<input type="checkbox" id="trigger1"/>
+	<label for="trigger1">Module 1 Track</label>
+	<h6> Module 1 Provides Information on How to Set Up Organizations and Roles and Configure Your Accounts. Additionally, Learn How to Navigate the Platform and Create Powerful Perspectives.</h6>
 	<section>
-	<body>
     <div class="black-section">
       <p>Training Resources:</p>
+
       <div class="checkbox-container">
 				<div class="checkbox-item">
 					<div class="checkbox"></div>
 				</div>
 				<div class="checklist">
-			<div class="checklist-item">
-				<input type="checkbox">
-				<span><h3><a href="#">Configure Accounts and Integrations</a></h3></span>
-			</div>
-			<div class="checklist-item">
-				<input type="checkbox">
-				<span><h3><a href="#">Perspectives Mangements</a></h3></span>
-			</div>
-			<div class="checklist-item">
-				<input type="checkbox">
-				<span><h3><a href="#">Design Effective Tagging Strategies</a></h3></span>
-			</div>
-			<div class="checklist-item">
-				<input type="checkbox">
-				<span><h3><a href="#">Build Policies For Alerts or Automated Actions</a></h3></span>
-			</div>
-			<div class="checklist-item">
-				<input type="checkbox">
-				<span><h3><a href="#">Manage Users, Organizations and Roles</a></h3></span>
-			</div>
-		<h2>Demos:</h2>
+				<br />
+		<h4><span>&#9758;</span> Training Tip: Ensure you watch all videos within each cloud specific training path </h4>
+		<h2>Organizations and Roles Configuration</h2>
+		<h3>The following trainings will help you configure your Organizations and Roles:</h3>
+		<br />
 		<div class="checklist-item">
 				<input type="checkbox">
-				<span><h3><a href="https://help.cloudhealthtech.com/flexorgs">Design Effective Tagging Strategies</a></h3></span>
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/78/creating-a-custom-role-all-clouds" target="_blank">Creating a Custom Role</a></h3></span>
+			</div>
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/412/creating-and-managing-flexorgs-all-clouds" target="_blank">Creating and Managing FlexOrgs</a></h3></span>
+			</div>
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/413/creating-and-managing-user-groups-all-clouds" target="_blank">Creating and Managing User Groups</a></h3></span>
+			</div>
+		<h2>Account Configuration</h2>
+		<h3>The following training paths will help you configure your accounts:</h3>
+		<br />
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/23" target="_blank">AWS</a></h3></span>
 			</div>
 			<div class="checklist-item">
-				<input type="checkbox" >
-				<span><h3><a href="#">Build Policies For Alerts or Automated Actions</a></h3></span>
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/57" target="_blank">Azure</a></h3></span>
 			</div>
 			<div class="checklist-item">
-				<input type="checkbox" >
-				<span><h3><a href="#">Manage Users, Organizations and Roles</a></h3></span>
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/24" target="_blank">Data Center</a></h3></span>
+			</div>
+				<h2>Introduction to the Platform</h2>
+				<h3>The following cloud specific training paths will help introduce you to the platform:</h3>
+				<br />
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/293/intro-to-the-cloudhealth-platform-elearning-aws" target="_blank">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/587/intro-to-the-cloudhealth-platform-elearning-gcp" target="_blank">GCP</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/339/intro-to-the-cloudhealth-platform-elearning-azure" target="_blank">Azure</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/30" target="_blank">Data Center</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/90/intro-to-the-cloudhealth-platform-webinar" target="_blank">Enroll in the Intro to the Platform Instructor-Led Session (Optional)</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/294/intro-to-the-cloudhealth-platform-hands-on-activities" target="_blank">Intro to the Platform Hands On Activities (Optional)</a></h3></span>
+			</div>
+		<h2>Perspectives Management</h2>
+		<h3>Now that you have your accounts and users configured, begin getting familiar with the platform's functionalities</h3>
+		<br />	
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/26" target="_blank">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/27" target="_blank">Azure</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/47" target="_blank">GCP</a></h3></span>
 			</div>
 		</div>
 	</div>
     </div>
     <div class="white-section">
-      <p>Customer Responsibility:</p>
+      <p>Customer Goals:</p>
       <div class="checkbox-container">
 				<div class="checkbox-item-a">
 					<div class="checkbox"></div>
 				</div>
 				<div class="checklist">
 				<h2>Configure Users</h2>
+				<h3>Follow these steps below to setup users:</h3>
+				<br />
 			<div class="checklist-item-a">
 				<input type="checkbox" >
-				<span><h3><a href="https://help.cloudhealthtech.com/flexorgs/">Step 1: Add Flexorgs (Optional)</a></h3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-working-with-flexorgs.html/" target="_blank">Step 1: Add Flexorgs (Optional)</a></h3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox" >
-				<span><h3><a href="https://help.cloudhealthtech.com/flexorgs/create-a-custom-role-optional">Step 2: Add Custom Roles (Optional)</a><h/3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-managing-classic-organizations-if-applicable.html#:~:text=for%20all%20organizations.-,Create%20a%20Custom%20Role%20(Optional),-Create%20a%20custom" target="_blank">Step 2: Add Custom Roles (Optional)</a><h/3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox" >
-    			<span><h3>Step 3:<a href="https://help.cloudhealthtech.com/flexorgs/invite-users-to-cloudhealth-via-single-sign-on"> Add Users Via SSO </a> OR <a href= "#"> the Platform</a></h3></span>
+    			<span><h3>Step 3:<a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-managing-sso.html" target="_blank"> Add Users Via SSO </a> OR <a href= "https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-managing-classic-organizations-if-applicable.html#:~:text=modifying%20the%20copy.-,Invite%20Users%20to%20VMware%20Aria%20Cost%20Via%20VMware%20Aria%20Cost%20Platform,-Invite%20people%20in" target="_blank"> the Platform</a></h3></span>
 			</div>
-			<h2>Configure Platforms</h2>
+			<h2>Configure Accounts</h2>
+			<h3>Set up the following <a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-vmware-aria-cost.html" target="_blank">platforms</a> in accordance with your contract:</h3>
+			<br />
 			<div class="checklist-item-a">
 				<input type="checkbox" >
-				<span><h3><a href="#">AWS</a></h3></span>
-			</div>
-			<div class="checklist-item-a">
-				<input type="checkbox" >
-				<span><h3><a href="#">Azure</a></h3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-aws-quick-start.html" target="_blank">AWS</a></h3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox" >
-				<span><h3><a href="#">Google</a></h3></span>
+				<span><h3><a href= "https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-azure-quick-start.html" target="_blank">Azure</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-gcp-quick-start.html" target="_blank">GCP</a></h3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox">
-				<span><h3><a href="#">Data Center</a></h3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-data-center-quick-start.html" target="_blank">Data Center</a></h3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox">
-				<span><h3><a href="#">VMware Cloud</a></h3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-vmware-quick-start.html" target="_blank">VMware Cloud</a></h3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox">
-				<span><h3><a href="#">Oracle Cloud Infrastructure</a></h3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-alibaba-cloud-quick-start.html" target="_blank">Alibaba Cloud</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-oracle-quick-start.html" target="_blank">Oracle Cloud</a></h3></span>
 			</div>
 			<h2>Configure Metrics Collection</h2>
+			<h3>Configure metrics collection using any of the following methods:</h3>
+			<br />
 			<div class="checklist-item-a">
 				<input type="checkbox">
-				<span><h3><a href="#">Third Party Metrics (Data Dog, New Relic, Wavefront)</a></h3></span>
+				<span><h3><a href="https://help.cloudhealthtech.com/integrations/" target="_blank">Third Party Metrics (Data Dog, New Relic, Wavefront)</a></h3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox">
-				<span><h3><a href="#">Metrics API</a></h3></span>
+				<span><h3><a href="https://apidocs.cloudhealthtech.com/#metrics_introduction-to-metrics-api" target="_blank">Metrics API</a></h3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox">
-				<span><h3><a href="#">Cloudhealth Agent</a></h3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-integrating-with-services.html#integrate-with-vmware-aria-cost-agent-6" target="_blank">VMware Aria Cost Agent</a></h3></span>
 			</div>
+			<h4><span>&#9758;</span> Setup Tip: Configure metrics for as many assets as possible to increase the accuracy of rightsizing recommendations</h4>
 			<h2>Configure Perspectives</h2>
+			<h3>Follow the steps below to setup Perspectives:</h3>
+			<br />
 			<div class="checklist-item-a">
 				<input type="checkbox">
-				<span><h3><a href="#">Step 1: Configure Perspectives</a></3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-introduction-to-perspectives.html" target="_blank">Step 1: Configure Perspectives</a></3></span>
 			</div>
 			<div class="checklist-item-a">
 				<input type="checkbox">
-				<span><h3><a href="#">Step 2: Configure Cost Reallocation Rules (Optional)</a></h3></span>
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-cost-reports.html" target="_blank">Step 2: Configure Cost Reallocation Rules (Optional)</a></h3></span>
 			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://apidocs.cloudhealthtech.com/#perspectives_introduction-to-perspectives-api" target="_blank">Perspectives API</a></h3></span>
+			</div>
+            <h4><span>&#9758;</span> Setup Tip: Use the Perspectives API to setup complex perspectives</h4>
 				</div>
     </div>
-  </body>
 	</section>
+	<br />
 
-<br></br>
+
  </div>
-  
+ 
+ <!-- Module 2 -->
+  <div class="accordion">
+	<input type="checkbox" id="trigger2"/>
+	<label for="trigger2">Module 2 Track</label>
+	<h6> Module 2 Dives Into Reporting and Analyzing. Learn How to Identify Spending Patterns Through Cost and Usage Analysis. Continue Perspectives Management and Create Budgets. </h6>
+<section>
+    <div class="black-section">
+      <p>Training Resources:</p>
+
+      <div class="checkbox-container">
+				<div class="checkbox-item">
+					<div class="checkbox"></div>
+				</div>
+				<div class="checklist">
+				<br />
+		<h4><span>&#9758;</span> Training Tip: Ensure you watch all videos within each cloud specific training path </h4>
+		<h2>Perspectives Management Continued:</h2>
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/482/tagging-and-perspectives-best-practices-recording-cloudlive?generated_by=209010&hash=f74f666745aa4badc286c5b7ea0780b59fc1d0db" target="_blank">Tagging and Best Practices</a></h3></span>
+			</div><br />
+		<h3>The following trainings will help you build Perspective Based Policies:</h3>
+		<br />
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/49/perspective-based-policies-aws?generated_by=209010&hash=8f3b1c1f4d6ed9fc14b42f188a00cb9e1baf3de0" target="_blank">AWS</a></h3></span>
+			</div>
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/63/perspective-based-policies-azure?generated_by=209010&hash=014fcae3e41a725a8301db347003a8ed2e64002d" target="_blank">Azure</a></h3></span>
+			</div>
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/375/perspective-based-policies-gcp?generated_by=209010&hash=7c67348f631b7963979b7e7d1ac72fe3d22e8ac5" target="_blank">GCP</a></h3></span>
+			</div>
+		<h2>Cost and Usage Reporting</h2>
+		<h3>The following training paths will help you understand and create reports based on your needs:</h3>
+		<br />
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/31" target="_blank">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/32" target="_blank">Azure</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/48" target="_blank">GCP</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/119" target="_blank">All Clouds</a></h3></span>
+			</div>
+				<h2>Configure Custom Dashboards</h2>
+				<h3>Learn how to create custom dashboards:</h3>
+				<br />
+				<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/77/building-a-custom-dashboard-aws?generated_by=209010&hash=4bcf434deaf77c84d2729531002e6f688be66439" target="_blank">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/582/building-a-custom-dashboard-azure?generated_by=209010&hash=13c920365adcf580ae09a2eca0aa6721695070a4" target="_blank">Azure</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/583/building-a-custom-dashboard-gcp?generated_by=209010&hash=b0579bece7228561929b96a354a3b34fc73b6eca" target="_blank">GCP</a></h3></span>
+			</div>
+		<h2>Building Your Annual Cloud Budgets</h2>
+		<h3>Discover how to input budgets and compare them against actual spend:</h3>
+		<br />
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/458/building-your-annual-cloud-budgets-recording-pop?generated_by=209010&hash=e9edf14323581d08bb3316fb35312af0e4da8616" target="_blank">Building Your Annual Cloud Budgets</a></h3></span>
+			</div>
+            <div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com//lms/index.php?r=coursepath/deeplink&id_path=45&hash=c2a0eaa3cefb78677dbaed3e3823ea12983417ef&generated_by=209010" target="_blank">Report and Analyze (Optional)</a></h3></span>
+			</div>
+		</div>
+	</div>
+    </div>
+    <div class="white-section">
+      <p>Customer Goals:</p>
+      <div class="checkbox-container">
+				<div class="checkbox-item-a">
+					<div class="checkbox"></div>
+				</div>
+				<div class="checklist">
+				<h2>Managing Perspectives Continued: </h2>
+				<h3>Follow these steps below to begin managing your Perspectives:</h3>
+				<br />
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-managing-perspectives.html" target="_blank">Manage Perspective Groups</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-tag-management.html" target="_blank">Manage Tagging</a><h/3></span>
+			</div>
+			<h2>Cost and Usage Reporting</h2>
+			<h3>Begin to create cost and usage reports in the platform:</h3>
+			<br />
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-cloudhealth-reports.html" target="_blank">Getting Started with Reports</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-cloudhealth-reports.html#actions-and-subscriptions-22" target="_blank">Actions and Subscriptions</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-flexreports.html" target="_blank">FlexReports</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-cost-reports.html" target="_blank">Cost Reports</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-usage-reports.html" target="_blank">Usage Reports</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-custom-line-items.html" target="_blank">Custom Line Items</a></h3></span>
+			</div>
+			<h2>Create Custom Dashboards</h2>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-cloudhealth-dashboards.html" target="_blank">Getting Started with Dashboards</a></h3></span>
+			</div><br />
+			<h3>Create multiple custom cloud-specific dashboards:</h3>
+<br />
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-aws-dashboard.html" target="_blank">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-azure-dashboard.html" target="_blank">Azure</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-gcp-dashboard.html" target="_blank">GCP</a></h3></span>
+			</div>
+			<h4><span>&#9758;</span> Tip: Create multiple custom dashboards, focused toward specific users in your organization, and subscribe users to respective dashboards.</h4>
+			<h2>Configure Budgets</h2>
+			<h3>Budgets allow you to visualize expected costs and compare with actual spend:</h3>
+			<br />
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-aws-governance-using-policies.html#configure-budgets-in-vmware-aria-cost-37" target="_blank">Configure Budgets in VMware Aria Cost</a></h3></span>
+			</div>
+            <h4><span>&#9758;</span> Setup Tip: Enter multiple budgets to view your data by overall budget or categorize by different perspectives. </h4>
+				</div>
+    </div>
+	</section>
+	<br />
+
+
+ </div>
+ 
+
+  <!-- Module 3 -->
+  <div class="accordion">
+	<input type="checkbox" id="trigger3"/>
+	<label for="trigger3">Module 3 Track</label>
+	<h6>Module 3 Will Teach You How to Secure and Manage Your Cloud. Create Rightsizing Infrastructure, Manage Reservations, and View Security Recommendations. Learn How to Leverage Containers Management for In-Depth Reporting. </h6>
+<section>
+    <div class="black-section">
+      <p>Training Resources:</p>
+
+      <div class="checkbox-container">
+				<div class="checkbox-item">
+					<div class="checkbox"></div>
+				</div>
+				<div class="checklist">
+				<br />
+		<h4><span>&#9758;</span> Training Tip: Ensure you watch all videos within each cloud specific training path </h4>
+		<h2>Governance, Policies, and Automation</h2>
+		<h3>Create guardrails in your environment with alert policies and take action with automation:</h3>
+	    <br /> 
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/33" target="_blank">AWS</a></h3></span>
+			</div>
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/34" target="_blank">Azure</a></h3></span>
+			</div>
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/49" target="_blank">GCP</a></h3></span>
+			</div>
+		<h2>Performance and Rightsizing</h2>
+		<h3>This course is designed to provide you with the information needed to downgrade or terminate your Instances or VMs based on utilization:</h3>
+		<br />
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/35" target="_blank">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/36" target="_blank">Azure</a></h3></span>
+			</div>
+				<h2>Reserved Instance Management</h2>
+				<h3>Determine how well your reservations are being utilized or how to better manage your Reserved Virtual Machines:</h3>
+				<br />
+				<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/37" target="_blank">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/53" target="_blank">Azure</a></h3></span>
+			</div>
+				<h2>Security</h2>
+				<h3>Monitor your accounts, services and resources and perform checks against the providers security and CIS best practices, as well as identify open ports:</h3>
+				<br />
+				<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/51" target="_blank">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/55" target="_blank">Azure</a></h3></span>
+			</div>
+		<h2>Containers</h2>
+		<h3>Learn how to configure your Container environment and use reports:</h3>
+		<br />
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/75" target="_blank">ECS Container Configuration</a></h3></span>
+			</div>
+            <div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/99" target="_blank">Containers Management</a></h3></span>
+			</div>
+            <div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/76" target="_blank">Kubernetes and Mesos Configuration</a></h3></span>
+			</div>
+            <div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/catalog/view/52" target="_blank">Container Reporting</a></h3></span>
+			</div>
+		</div>
+	</div>
+    </div>
+    <div class="white-section">
+      <p>Customer Goals:</p>
+      <div class="checkbox-container">
+				<div class="checkbox-item-a">
+					<div class="checkbox"></div>
+				</div>
+				<div class="checklist">
+				<br />
+				<h4><span>&#9758;</span> Tip: Complete only the goals relevant to your instance. Feel free to skip the others</h4>
+				<h2>Create Cloud-Specific Governance Policies: </h2>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/getting-started-with-vmware-aria-cost/GUID-getting-started-with-policies.html" target="_blank">Getting Started with Policies</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-aws-governance-using-policies.html" target="_blank">AWS Governance using Policies</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-azure-governance-using-policies.html" target="_blank">Azure Governance using Policies</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-gcp-governance-using-policies.html" target="_blank">GCP Governance using Policies</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-oracle-cloud-governance.html" target="_blank">Oracle Cloud Governance using Policies</a></h3></span>
+			</div>
+			<h2>Create Cloud-Specific Best Practice Policies: </h2>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-aws-best-practice-policies.html" target="_blank">AWS Best Practice Policies</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-azure-best-practice-policies.html" target="_blank">Azure Best Practice Policies</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-gcp-best-practice-policies.html" target="_blank">GCP Best Practice Policies</a></h3></span>
+			</div>
+			<h2>Work with Recommendations and Improve Performance: </h2>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-aws-rightsizing-new.html" target="_blank">AWS Rightsizing - New</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-aws-rightsizing-classic.html" target="_blank">AWS Rightsizing - Classic</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-azure-rightsizing-new.html" target="_blank">Azure Rightsizing - New</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-azure-rightsizing-classic.html" target="_blank">Azure Rightsizing - Classic</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-gcp-rightsizing.html" target="_blank">GCP Rightsizing</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-data-center-rightsizing.html" target="_blank">Data Center Rightsizing</a></h3></span>
+			</div>
+			<h2>Manage your Reserved Instances: </h2>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-aws-reservation-management.html" target="_blank">AWS Reservation Management</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-azure-reservation-management.html" target="_blank">Azure Reservation Management</a></h3></span>
+			</div>
+			<h2>Create Security Reports:</h2>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-security-reports.html" target="_blank">Security Reports</a></h3></span>
+			</div>
+			<h2>Create Reports and Manage Containers:</h2>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-container-cost-reports.html" target="_blank">Container Cost Reports</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/working-with-reports-recommendations-aria-cost/GUID-container-usage-reports.html" target="_blank">Container Usage Reports</a></h3></span>
+			</div>
+			<h2>Create Automations (Optional):</h2>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-anomaly-detection.html" target="_blank">Anomaly Detection</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://docs.vmware.com/en/VMware-Aria-Cost/SaaS/using-and-managing-vmware-aria-cost/GUID-savings-automator.html" target="_blank">Savings Automator</a></h3></span>
+			</div>
+      </div>
+    </div>
+    </div>
+	</section>
+	<br />
+
+ </div>
+
+ <!-- Expansion Courses -->
+ <div class="accordion-a">
+	<input type="checkbox" id="trigger4"/>
+	<label for="trigger4">Expansion Courses</label>
+	<h6>Explore in-depth topics and expand your Aria Cost Knowledge!</h6>
+<section>
+    <div class="expansion-section">
+      <div class="checkbox-container">
+				<div class="checkbox-item-a">
+					<div class="checkbox"></div>
+				</div>
+				<div class="checklist">
+        <h2> Platform Administration: </h2>
+		    <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/573/perspectives-whats-new-and-updated-recording-pop" target="_blank">Perspectives: What's New and Updated</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/351/perspectives-management-video" target="_blank">Perspectives Management</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/482/tagging-and-perspectives-best-practices-recording-cloudlive" target="_blank">Tagging and Best Practices</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/540/creating-a-cloud-center-of-excellence-recording-pop" target="_blank">Creating a Cloud Center of Excellence</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/468/configuration-tips-for-data-accuracy-scale-recording-pop" target="_blank">Configuration Tips for Data Accuracy and Scale</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/415/managing-flexorgs-in-vmware-aria-cost-pop" target="_blank">Managing FlexOrgs in Vmware Aria Cost</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/364/gcp-best-practices-recording-pop" target="_blank">GCP Best Practices</a></h3></span>
+			</div>
+     </div>
+     </div>
+     <img src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/gallery/illustrations/illu-dws-desktopmanagement-whtbg.png" alt="Your Image">
+     </div>
+
+     <div class="expansion-section">
+      <img src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/gallery/illustrations/Illu-dev-metrics-whtbg.png" alt="Your Image">
+      <div class="checkbox-container">
+				<div class="checkbox-item-a">
+					<div class="checkbox"></div>
+				</div>
+				<div class="checklist">
+        <h2> Financial Reporting: </h2>
+		    <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/481/analyzing-trends-and-budgets" target="_blank">Analyzing Trends and Budgets</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/473/flexability-in-reports-orgs-recording-pop" target="_blank">FLEXability in Reports and Orgs</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/464/driving-multicloud-efficiency-recording-pop" target="_blank">Driving Multicloud Efficiency</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/458/building-your-annual-cloud-budgets-recording-pop" target="_blank">Building Your Annual Cloud Budgets</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/419/implementing-an-effective-chargeback-or-showback-model-recording-pop" target="_blank">Implementing an Effective Chargeback or Showback Model</a></h3></span>
+			</div>
+      <div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/354/allocating-costs-for-chargeback-or-showback-video" target="_blank">Allocating Costs for Chargeback or Showback</a></h3></span>
+			</div>
+     </div>
+     </div>
+      </div>
+
+     <div class="expansion-section">
+     <div class="checkbox-container">
+      <div class="checkbox-item-a">
+        <div class="checkbox"></div>
+      </div>
+      <div class="checklist">
+      <h2> Governance and Security: </h2>
+      <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/572/potential-waste-detection-savings-recording-pop" target="_blank">Potential Waste Detection and Savings</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/519/gcp-using-policies-to-optimize-spend-recording-pop" target="_blank">Using Policies to Optimize Spend</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/479/managing-infrastructure-with-policies" target="_blank">Managing Infrastructure with Policies (GCP)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/463/vmware-aria-cost-must-have-policies-recording-pop" target="_blank">VMware Aria Cost Must-Have Policies</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/355/identifying-security-risks-video" target="_blank">Identifying Security Risks</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/349/policies-and-automation-video" target="_blank">Policies and Automation</a></h3></span>
+    </div>
+   </div>
+   </div>
+   <img src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/gallery/illustrations/illu-man-gear-whtbg.png" alt="Your Image">
+     </div>
+
+     <div class="expansion-section">
+      <div class="checkbox-container">
+       <div class="checkbox-item-a">
+         <div class="checkbox"></div>
+       </div>
+       <div class="checklist">
+       <h2> Infrastructure Optimization: </h2>
+       <div class="checklist-item-a">
+       <input type="checkbox">
+       <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/593/all-about-optimization-recording-pop" target="_blank">All About Optimization</a></h3></span>
+     </div>
+     <div class="checklist-item-a">
+       <input type="checkbox">
+       <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/547/reducing-your-cloud-services-rate-recording-pop" target="_blank">Reducing your Cloud Service Rate</a></h3></span>
+     </div>
+     <div class="checklist-item-a">
+       <input type="checkbox">
+       <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/524/utilizing-burstable-instances-recording-pop" target="_blank">Utilizing Burstable Instances</a></h3></span>
+     </div>
+     <div class="checklist-item-a">
+       <input type="checkbox">
+       <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/523/sql-database-rightsizing-recording-pop" target="_blank">SQL Database Rightsizing</a></h3></span>
+     </div>
+     <div class="checklist-item-a">
+       <input type="checkbox">
+       <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/522/aws-optimizing-ebs-volumes-recording-pop" target="_blank">Optimizing EBS Volumes (AWS)</a></h3></span>
+     </div>
+     <div class="checklist-item-a">
+       <input type="checkbox">
+       <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/521/manage-azure-vm-reservations-recording-pop" target="_blank">Manage Azure VM Reservations</a></h3></span>
+     </div>
+     <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/520/analyzing-rds-instances-recording-pop" target="_blank">Analyzing RDS Instances</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/518/gcp-compute-optimization-recording-pop" target="_blank">Compute Optimization (GCP)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/517/azure-vm-rightsizing-scheduling-recording-pop" target="_blank">VM Rightsizing & Scheduling (Azure)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/516/azure-leveraging-sql-elasticpools-recording-pop" target="_blank">Leveraging SQL Elasticpools (Azure)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/515/azure-investigating-data-transfer-charges-recording-pop" target="_blank">Investigating Data Transfer Charges (Azure)</a></h3></span>
+    </div>
+    </div>
+    </div>
+    <div class="checkbox-container">
+      <div class="checkbox-item-a">
+        <div class="checkbox"></div>
+      </div>
+      <div class="checklist">
+        <br /> 
+      <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/513/aws-rightsizing-ec2-instances-recording-pop" target="_blank">Rightsizing EC2 Instances (AWS)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/512/aws-optimize-rates-with-savings-plans-recording-pop" target="_blank">Optimize Rates with Savings Plans (AWS)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/511/aws-investigating-data-transfer-charges-recording-pop" target="_blank">Investigating Data Transfer Charges (AWS)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/510/aws-evaluating-classic-load-balancers-recording-pop" target="_blank">Evaluating Classic Load Balancers (AWS)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/509/aws-ebs-unattached-volume-optimization-recording-pop" target="_blank">EBS Unattached Volume Optimization (AWS)</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+      <input type="checkbox">
+      <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/480/exploring-cloud-asset-management" target="_blank">Exploring Cloud Asset Management</a></h3></span>
+    </div>
+    <div class="checklist-item-a">
+     <input type="checkbox">
+     <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/402/exploring-new-aws-savings-plan-functionality-recording-pop" target="_blank">Exploring New AWS Savings Plan Functionality</a></h3></span>
+   </div>
+   <div class="checklist-item-a">
+     <input type="checkbox">
+     <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/396/optimizing-cloud-costs-in-todays-economic-climate-recording-pop" target="_blank">Optimize Cloud Costs in Today's Economic Climate</a></h3></span>
+   </div>
+   <div class="checklist-item-a">
+     <input type="checkbox">
+     <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/357/evaluating-and-optimizing-databases-video" target="_blank">Evaluating and Optimizing Databases</a></h3></span>
+   </div>
+   <div class="checklist-item-a">
+     <input type="checkbox">
+     <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/356/assessing-storage-and-network-resources-video" target="_blank">Assesing Storage and Network Resources</a></h3></span>
+   </div>
+   <div class="checklist-item-a">
+     <input type="checkbox">
+     <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/350/reservation-management-video" target="_blank">Reservation Management</a></h3></span>
+   </div>
+   </div>
+   </div>
+      </div>
+
+      <div class="expansion-section">
+        <img src="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/gallery/thumbnails/tn-illu-dev-developers-3-whtbg.png" alt="Your Image">
+        <div class="checkbox-container">
+          <div class="checkbox-item-a">
+            <div class="checkbox"></div>
+          </div>
+          <div class="checklist">
+          <h2> Containers and API's: </h2>
+          <div class="checklist-item-a">
+          <input type="checkbox">
+          <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/568/automatic-cluster-registration" target="_blank">Automatic Cluster Registration</a></h3></span>
+        </div>
+        <div class="checklist-item-a">
+          <input type="checkbox">
+          <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/567/containers-who-needs-them-and-why-pop-may-2022" target="_blank">Containers: Who needs them  and why?</a></h3></span>
+        </div>
+        <div class="checklist-item-a">
+          <input type="checkbox">
+          <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/389/creating-perspectives-for-containers-kubernetes" target="_blank">Creating Perspectives for Containers (Kubernetes)</a></h3></span>
+        </div>
+        <div class="checklist-item-a">
+          <input type="checkbox">
+          <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/388/creating-perspectives-for-containers-ecs" target="_blank">Creating Perspectives for Containers (ECS)</a></h3></span>
+        </div>
+        <h2>VMware Aria Cost APIs</h2>
+        <div class="checklist-item-a">
+          <input type="checkbox">
+          <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/542/vmware-aria-cost-for-developers-recording-pop" target="_blank">VMware Aria Cost for Developers</a></h3></span>
+        </div>
+        <div class="checklist-item-a">
+          <input type="checkbox">
+          <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/353/vmware-aria-cost-apis-reporting-video" target="_blank">VMware Aria Cost APIs: Reporting</a></h3></span>
+        </div>
+        <div class="checklist-item-a">
+          <input type="checkbox">
+          <span><h3><a href="https://cloudhealthtech.docebosaas.com/learn/course/internal/view/elearning/352/using-vmware-aria-cost-apis-video" target="_blank">Using VMware Aria Cost APIs</a></h3></span>
+        </div>
+       </div>
+       </div>
+       </div>
+	</section>
+	<br />
+ </div>
+ 
+ </div>  <!-- Main Body Section Closed -->
+
+<!-- Footer-->
+
+	<footer>
+		<img src="https://cloudhealth.vmware.com/content/dam/digitalmarketing/vmware/en/images/gallery/logos/vmware-prod-icon-aria-cost-rgb-horiz.svg" alt="Logo">
+		<p>&copy; VMware 2023 - All rights reserved.</p>
+	</footer>
+</body>
+</html>
+
+
+	
