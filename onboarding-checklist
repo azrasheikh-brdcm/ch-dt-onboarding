@@ -1,0 +1,188 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>My Website</title>
+<style>
+  .announcement-announcement {
+    gap: var(--dl-space-space-halfunit);
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    transition: 0.3s;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 12px;
+    background-color: #1c428a;
+    width: 100%;
+  }
+  .announcement-announcement:hover {
+    box-shadow: 10px 10px 15px 0px #d4d4d4;
+  }
+  .announcement-title {
+    color: #8AEDE8;
+    font-size: 14px;
+    font-family: Metropolis, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  .announcement-root-class-name {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .announcement-root-class-name1 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .announcement-announcement {
+    align-items: center;
+    flex-direction: column;
+  }
+</style>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metropolis">
+<body>
+  <div>
+    <a href="https://ariacostcs.gainsightcloud.com/v1/sites/onboardinghelpform" target="_blank">
+      <div class="announcement-announcement">
+        <span class="announcement-title">Need Help From Your TAM? Click Here</span>
+        <div class="announcement-button"></div>
+      </div>
+    </a>
+  </div>
+</body>
+
+  
+  <div class="accordian">
+	<input type="checkbox" id="trigger3"/>
+	<label for="trigger3">Module 3 Track</label>
+	<h6> Module 3 Module 3 Will Teach You How to Secure and Manage Your Cloud. Create Rightsizing Infrastructure, Manage Reservations, and View Security Recommendations. Learn How to Leverage Containers Management for In-Depth Reporting. </h6>
+
+	<section>
+	<body>
+    <div class="black-section">
+      <p>Training Resources:</p>
+      <div class="checkbox-container">
+				<div class="checkbox-item">
+					<div class="checkbox"></div>
+				</div>
+				<div class="checklist">
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="#">Configure Accounts and Integrations</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="#">Perspectives Mangements</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="#">Design Effective Tagging Strategies</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="#">Build Policies For Alerts or Automated Actions</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="#">Manage Users, Organizations and Roles</a></h3></span>
+			</div>
+		<h2>Demos:</h2>
+		<div class="checklist-item">
+				<input type="checkbox">
+				<span><h3><a href="https://help.cloudhealthtech.com/flexorgs">Design Effective Tagging Strategies</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox" >
+				<span><h3><a href="#">Build Policies For Alerts or Automated Actions</a></h3></span>
+			</div>
+			<div class="checklist-item">
+				<input type="checkbox" >
+				<span><h3><a href="#">Manage Users, Organizations and Roles</a></h3></span>
+			</div>
+		</div>
+	</div>
+    </div>
+    <div class="white-section">
+      <p>Customer Responsibility:</p>
+      <div class="checkbox-container">
+				<div class="checkbox-item-a">
+					<div class="checkbox"></div>
+				</div>
+				<div class="checklist">
+				<h2>Configure Users</h2>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://help.cloudhealthtech.com/flexorgs/">Step 1: Add Flexorgs (Optional)</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="https://help.cloudhealthtech.com/flexorgs/create-a-custom-role-optional">Step 2: Add Custom Roles (Optional)</a><h/3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+    			<span><h3>Step 3:<a href="https://help.cloudhealthtech.com/flexorgs/invite-users-to-cloudhealth-via-single-sign-on"> Add Users Via SSO </a> OR <a href= "#"> the Platform</a></h3></span>
+			</div>
+			<h2>Configure Platforms</h2>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="#">AWS</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="#">Azure</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox" >
+				<span><h3><a href="#">Google</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="#">Data Center</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="#">VMware Cloud</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="#">Oracle Cloud Infrastructure</a></h3></span>
+			</div>
+			<h2>Configure Metrics Collection</h2>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="#">Third Party Metrics (Data Dog, New Relic, Wavefront)</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="#">Metrics API</a></h3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="#">Cloudhealth Agent</a></h3></span>
+			</div>
+			<h2>Configure Perspectives</h2>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="#">Step 1: Configure Perspectives</a></3></span>
+			</div>
+			<div class="checklist-item-a">
+				<input type="checkbox">
+				<span><h3><a href="#">Step 2: Configure Cost Reallocation Rules (Optional)</a></h3></span>
+			</div>
+				</div>
+    </div>
+  </body>
+	</section>
+
+<br></br>
+ </div>
+  
